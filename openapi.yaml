@@ -17,16 +17,6 @@ tags:
   - name: books
     description: In-memory book list cache API
 paths:
-  /:
-    summary: Testing route1
-    get:
-      summary: Testing route1
-      operationId: TestingRoute1
-      responses:
-        "200":
-          description: Successful operation
-        "404":
-          description: failed operation
   /patientList:
     summary: Testing route3
     get:
