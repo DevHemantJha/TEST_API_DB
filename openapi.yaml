@@ -47,37 +47,29 @@ paths:
           description: Successful operation
         "404":
           description: failed operation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/KeyValue"
 components:
   schemas:
-    Key:
-      type: object
-      properties:
-        uuid:
-          type: string
-          example: "my-uuid"
-    Status:
-      type: object
-      properties:
-        status:
-          type: string
-          example: "read"
     KeyValue:
       type: object
-      required:
-        - title
-        - author
-        - status
       properties:
-        title:
+        routeName:
           type: string
-          example: "my-title"
-        author:
+        headerBackgroundColor:
           type: string
-          example: "my-author"
-        status:
+        headerFontColor:
           type: string
-          example: "read"
-    StringArray:
-      type: array
-      items:
-        type: string
+        footerBackgroundColor:
+          type: string
+        footerFontColor:
+          type: string
+        createdBy:
+          type: string
+        createdOn:
+          type: string
+          format: date-time
+    
