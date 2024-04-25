@@ -18,10 +18,30 @@ tags:
     description: In-memory book list cache API
 paths:
   /patientList:
-    summary: Testing route3
+    summary: Testing route1
     get:
-      summary: Testing route3
-      operationId: TestingRoute3
+      summary: Testing route1
+      operationId: patientList
+      responses:
+        "200":
+          description: Successful operation
+        "404":
+          description: failed operation
+  /getRouteTheme:
+    summary: Testing route2
+    get:
+      summary: Testing route2
+      operationId: getRouteTheme
+      responses:
+        "200":
+          description: Successful operation
+        "404":
+          description: failed operation
+  /addRouteTheme:
+    summary: Testing route3
+    post:
+      summary: addRouteTheme
+      operationId: addRouteTheme
       responses:
         "200":
           description: Successful operation

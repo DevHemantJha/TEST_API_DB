@@ -6,4 +6,6 @@ const router = express.Router();
 
 //Get all option route
 router.get('/patientList', patientList)
+router.post('/addRouteTheme', addRouteThemeController)
+router.get('/getRouteTheme', getRouteTheme)
 module.exports = router;
